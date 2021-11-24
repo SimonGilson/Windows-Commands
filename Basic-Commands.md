@@ -31,3 +31,34 @@ net localgroup {GroupName} /add  - add to a group ie administrators group
 ```
 net user Username /delete - deletes the user account
 ```
+
+
+## Shutdown Commands
+```
+shutdown  - will shut down the machine 
+```
+```
+shutdown /r /t 100  - Reboot command after 100 seconds 
+```
+```
+shutdown /m \\ MachineName /r /f - This will reboot a remote computer forcing all applications to close
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
