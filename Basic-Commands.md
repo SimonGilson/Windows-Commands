@@ -31,6 +31,9 @@ net localgroup {GroupName} /add  - add to a group ie administrators group
 ```
 net user Username /delete - deletes the user account
 ```
+```
+wmic UserAccount where Name="user name" set PasswordExpires=False
+```
 
 
 ## Shutdown Commands
