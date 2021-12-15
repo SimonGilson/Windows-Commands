@@ -48,9 +48,55 @@ shutdown /m \\ MachineName /r /f - This will reboot a remote computer forcing al
 
 ```
 
+## Windows System Info Commands
+```
+ver - Get the OS Version
+```
+```
+sc query state=all - Show Services
+```
+```
+tasklist /scvc - Show Services and processes
+```
+```
+fsuntil fsinfo drives - List drives (Must be admin)
+```
+```
+echo %USERNAME% - Current User 
+```
 
+## Windows Domain Commands 
 
-
+```
+net view /domain - Hosts in the current domain
+```
+```
+net view /domain:{mydomain} - Hosts in {mydomain}
+```
+```
+net user /domain - All users in the current domain
+```
+```
+net localgroup Administrators  - List local Admins
+```
+```
+net group "Domain Admins" /domain - List Users in Domain Admins
+```
+```
+net group "Domain Controllers" /domain - List Domain Controllers in current Domain
+```
+```
+net accounts /domain - Domain Password Policy
+```
+```
+net share - Current SMB Shares
+```
+```
+net sesssion | find / "\\" - Active SMB Shares
+```
+```
+net share <share> c:\share - Share folder
+```
 
 
 
